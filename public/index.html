@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>SILB.io El bot que se pone en la cola por ti</title>
+    <script src="./utils.js"></script>
+    <style>
+
+        label {
+            display: block;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .tab-container {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            background: aqua;
+            height: 100vh;
+            align-content: flex-start;
+        }
+
+        .row {
+            flex: 0 0 100%;
+            display: flex;
+        }
+
+        .tab {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            text-align: center;
+            flex: 1 1 0;
+            height: fit-content;
+        }
+
+        .tab:hover {
+            background-color: #ddd;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<div class="tab-container">
+    <div class="row"><h1>Bienvenido a SILB.io</h1></div>
+    <div class="row">
+        <div class="tab">Datos de los receptores</div>
+        <div class="tab">Elección de trámites</div>
+        <div class="tab">Estado de la petición</div>
+    </div>
+    <div class="row">
+        <section class="tab-content" id="tab1">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nombre(s)</th>
+                    <th>Apellidos</th>
+                    <th>Tipo de documento</th>
+                    <th>Número de documento</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>País de Nacimiento</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="data-row">
+                    <td><input name="nombre" type="text"></td>
+                    <td><input name="apellidos" type="text"></td>
+                    <td>
+                        <select name="tipo_documento">
+                            <option value="DNI">DNI</option>
+                            <option value="NIE">NIE</option>
+                            <option value="Pasaporte">Pasaporte</option>
+                        </select>
+                    </td>
+                    <td><input name="numero_documento" type="text"></td>
+                    <td><input max="9999-12-31" name="fecha_nacimiento" type="date"></td>
+                    <td>
+                        <select name="pais_nacimiento">
+                            <optgroup label="Africa">
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="South Africa">South Africa</option>
+                            </optgroup>
+                            <optgroup label="Asia">
+                                <option value="China">China</option>
+                                <option value="India">India</option>
+                            </optgroup>
+                            <optgroup label="Europe">
+                                <option value="France">France</option>
+                                <option value="Germany">Germany</option>
+                            </optgroup>
+                            <optgroup label="North America">
+                                <option value="Canada">Canada</option>
+                                <option value="United States">United States</option>
+                            </optgroup>
+                            <optgroup label="Oceania">
+                                <option value="Australia">Australia</option>
+                                <option value="New Zealand">New Zealand</option>
+                            </optgroup>
+                            <optgroup label="South America">
+                                <option value="Argentina">Argentina</option>
+                                <option value="Brazil">Brazil</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <button id="add-row">Otra fila</button>
+            <button class='fwdBtn' onclick="openTab('tab2')">Próximo paso</button>
+        </section>
+        <section class="tab-content hidden" id="tab2">
+            <form id="userData"></form>
+            <button class='bckBtn' onclick="openTab('tab1')">Volver atrás</button>
+            <button class='fwdBtn' onclick="openTab('tab3')">Próximo paso</button>
+        </section>
+        <section class="tab-content hidden" id="tab3">
+            <h1> Horas disponibles</h1>
+        </section>
+    </div>
+</div>
+<script>
+    let selectsData;
+    (async function () {
+        const initialSelectId = 'administracion';
+        const response = await fetch('/formopts');
+        selectsData = await response.json();
+        utils.makeOptionsForSelect('userData', selectsData[initialSelectId]);
+    })()
+
+    function openTab(tabId) {
+        // Hide all tab contents
+        const tabContents = document.getElementsByClassName('tab-content');
+        for (const content of tabContents) {
+            content.classList.add('hidden')
+        }
+
+        // Show the selected tab content
+        const selectedTab = document.getElementById(tabId);
+        if (selectedTab) {
+            selectedTab.classList.remove('hidden');
+        }
+    }
+
+    document.getElementById('add-row').addEventListener('click', function () {
+        const newRow = document.querySelector('.data-row').cloneNode(true);
+        newRow.querySelectorAll('input').forEach(input => input.value = ''); // Clear input values in the new row
+        document.querySelector('tbody').appendChild(newRow);
+    });
+</script>
+</body>
+</html>

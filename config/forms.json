@@ -1,0 +1,498 @@
+{
+  "administracion": {
+    "label": "Elija la administración con la que quiere hacer una cita previa.",
+    "placeholder": "Elija una de las opciones en la lista",
+    "optGroups": {
+      "delegaciones": {
+        "label": "Delegaciones del Gobierno",
+        "options": {
+          "extranjeria": {
+            "value": "Extranjería",
+            "rel": [
+              {
+                "label": "Elija la provincia en la que necesita hacer el trámite",
+                "placeholder": "Seleccione provincia",
+                "optGroups": {
+                  "provincias": {
+                    "label": "provincias",
+                    "options": {
+                      "a_coruna": {
+                        "value": "A Coruña",
+                        "rel": ""
+                      },
+                      "albacete": {
+                        "value": "Albacete",
+                        "rel": ""
+                      },
+                      "alicante": {
+                        "value": "Alicante",
+                        "rel": ""
+                      },
+                      "almeria": {
+                        "value": "Almería",
+                        "rel": ""
+                      },
+                      "araba": {
+                        "value": "Araba",
+                        "rel": ""
+                      },
+                      "asturias": {
+                        "value": "Asturias",
+                        "rel": ""
+                      },
+                      "avila": {
+                        "value": "Ávila",
+                        "rel": ""
+                      },
+                      "badajoz": {
+                        "value": "Badajoz",
+                        "rel": ""
+                      },
+                      "barcelona": {
+                        "value": "Barcelona",
+                        "rel": [
+                          {
+                            "label": "Elija Oficina",
+                            "placeholder": "Selecciona Oficina",
+                            "optGroups": {
+                              "elegir_oficina": {
+                                "label": "Elegir oficina",
+                                "options": {
+                                  "todas": {
+                                    "value": "Cualquier oficina",
+                                    "rel": ""
+                                  },
+                                  "cartas_de_invitacion": {
+                                    "value": "CNP CARTAS DE INVITACION, CALLE GUADALAJARA , 1",
+                                    "rel": ""
+                                  },
+                                  "badalona": {
+                                    "value": "CNP COMISARIA BADALONA, AVDA. DELS VENTS, 9",
+                                    "rel": ""
+                                  },
+                                  "castelldefels": {
+                                    "value": "CNP COMISARIA CASTELLDEFELS, PLAÇA DE L`ESPERANTO, 4",
+                                    "rel": ""
+                                  },
+                                  "cerdanyola_del_valles": {
+                                    "value": "CNP COMISARIA CERDANYOLA DEL VALLES, VERGE DE LES FEIXES, 4",
+                                    "rel": ""
+                                  },
+                                  "cornella_de_llobregat": {
+                                    "value": "CNP COMISARIA CORNELLA DE LLOBREGAT, AV. SANT ILDEFONS, S/N",
+                                    "rel": ""
+                                  },
+                                  "el_prat_de_llobregat": {
+                                    "value": "CNP COMISARIA EL PRAT DE LLOBREGAT, CENTRE, 4",
+                                    "rel": ""
+                                  },
+                                  "granollers": {
+                                    "value": "CNP COMISARIA GRANOLLERS, RICOMA, 65",
+                                    "rel": ""
+                                  },
+                                  "igualada": {
+                                    "value": "CNP COMISARIA IGUALADA, PRAT DE LA RIBA, 13",
+                                    "rel": ""
+                                  },
+                                  "lhospitalet_de_llobregat": {
+                                    "value": "CNP COMISARIA LHOSPITALET DE LLOBREGAT, Rbla. Just Oliveres, 43",
+                                    "rel": ""
+                                  },
+                                  "manresa": {
+                                    "value": "CNP COMISARIA MANRESA, SOLER I MARCH, 5",
+                                    "rel": ""
+                                  },
+                                  "mataro": {
+                                    "value": "CNP COMISARIA MATARO, AV. GATASSA, 15",
+                                    "rel": ""
+                                  },
+                                  "montcada_i_reixac": {
+                                    "value": "CNP COMISARIA MONTCADA I REIXAC, MAJOR, 38",
+                                    "rel": ""
+                                  },
+                                  "ripollet": {
+                                    "value": "CNP COMISARIA RIPOLLET, TAMARIT, 78",
+                                    "rel": ""
+                                  },
+                                  "rubi": {
+                                    "value": "CNP COMISARIA RUBI, TERRASSA, 16",
+                                    "rel": ""
+                                  },
+                                  "sabadell": {
+                                    "value": "CNP COMISARIA SABADELL, BATLLEVELL, 115",
+                                    "rel": ""
+                                  },
+                                  "sant_adria_del_besos": {
+                                    "value": "CNP COMISARIA SANT ADRIA DEL BESOS, AV. JOAN XXIII, 2",
+                                    "rel": ""
+                                  },
+                                  "sant_boi_de_llobregat": {
+                                    "value": "CNP COMISARIA SANT BOI DE LLOBREGAT, RIERA BASTÉ, 43",
+                                    "rel": ""
+                                  },
+                                  "sant_cugat_del_valles": {
+                                    "value": "CNP COMISARIA SANT CUGAT DEL VALLES, VALLES, 1",
+                                    "rel": ""
+                                  },
+                                  "sant_feliu_de_llobregat": {
+                                    "value": "CNP COMISARIA SANT FELIU DE LLOBREGAT, CARRERETES, 9",
+                                    "rel": ""
+                                  },
+                                  "santa_coloma_de_gramenet": {
+                                    "value": "CNP COMISARIA SANTA COLOMA DE GRAMENET, IRLANDA, 67",
+                                    "rel": ""
+                                  },
+                                  "terrassa": {
+                                    "value": "CNP COMISARIA TERRASSA, BALDRICH, 13",
+                                    "rel": ""
+                                  },
+                                  "vic": {
+                                    "value": "CNP COMISARIA VIC, BISBE MORGADES, 4",
+                                    "rel": ""
+                                  },
+                                  "viladecans": {
+                                    "value": "CNP COMISARIA VILADECANS, AVDA. BALLESTER, 2",
+                                    "rel": ""
+                                  },
+                                  "vilafranca_del_penedes": {
+                                    "value": "CNP COMISARIA VILADECANS, AVDA. BALLESTER, 2",
+                                    "rel": ""
+                                  },
+                                  "vilanova_i_la_geltru_ode": {
+                                    "value": "CNP COMISARIA VILANOVA I LA GELTRU ODE, VAPOR, 19",
+                                    "rel": ""
+                                  },
+                                  "cnp_guadalajara": {
+                                    "value": "CNP GUADALAJARA, Guadalajara, 1",
+                                    "rel": ""
+                                  },
+                                  "cnp_mallorca_granados": {
+                                    "value": "CNP MALLORCA GRANADOS, MALLORCA, 213",
+                                    "rel": ""
+                                  },
+                                  "cnp_psj_planta_baja": {
+                                    "value": "CNP PSJ PLANTA BAJA, PASSEIG SANT JOAN, 189",
+                                    "rel": ""
+                                  },
+                                  "cnp_rambla_guipuscoa_74": {
+                                    "value": "CNP RAMBLA GUIPUSCOA 74, RAMBLA GUIPUSCOA, 74",
+                                    "rel": ""
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "label": "Trámites disponibles en esta provincia",
+                            "placeholder": "Despliega para ver tramites disponibles en esta provincia",
+                            "optGroups": {
+                              "tramites": {
+                                "label": "Trámites",
+                                "options": {
+                                  "autorizacion_regreso": {
+                                    "value": "AUTORIZACIÓN DE REGRESO",
+                                    "rel": ""
+                                  },
+                                  "recogida_tarjeta_identidad": {
+                                    "value": "POLICIA - RECOGIDA DE TARJETA DE IDENTIDAD DE EXTRANJERO (TIE)",
+                                    "rel": ""
+                                  },
+                                  "policia_carta_invitacion": {
+                                    "value": "POLICIA-CARTA DE INVITACIÓN",
+                                    "rel": ""
+                                  },
+                                  "certificado_registro_ciudadano_ue": {
+                                    "value": "POLICIA-CERTIFICADO DE REGISTRO DE CIUDADANO DE LA U.E.",
+                                    "rel": ""
+                                  },
+                                  "certificados_residencia": {
+                                    "value": "POLICIA-CERTIFICADOS (DE RESIDENCIA, DE NO RESIDENCIA Y DE CONCORDANCIA)",
+                                    "rel": ""
+                                  },
+                                  "certificados_asignacion_nie": {
+                                    "value": "POLICIA-CERTIFICADOS Y ASIGNACION NIE (NO COMUNITARIOS)",
+                                    "rel": ""
+                                  },
+                                  "toma_huella_tarjeta_renovacion_duplicado": {
+                                    "value": "POLICIA-TOMA DE HUELLA (EXPEDICIÓN DE TARJETA), RENOVACIÓN DE TARJETA DE LARGA DURACIÓN Y DUPLICADO",
+                                    "rel": ""
+                                  },
+                                  "tarjeta_conflicto_ucrania": {
+                                    "value": "POLICÍA TARJETA CONFLICTO UCRANIA–ПОЛІЦІЯ -КАРТКА ДЛЯ ПЕРЕМІЩЕНИХ ОСІБ ВНАСЛІДОК КОНФЛІКТУ В УКРАЇНІ",
+                                    "rel": ""
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "bizkaia": {
+                        "value": "Bizkaia",
+                        "rel": ""
+                      },
+                      "burgos": {
+                        "value": "Burgos",
+                        "rel": ""
+                      },
+                      "caceres": {
+                        "value": "Cáceres",
+                        "rel": ""
+                      },
+                      "cadiz": {
+                        "value": "Cádiz",
+                        "rel": ""
+                      },
+                      "cantabria": {
+                        "value": "Cantabria",
+                        "rel": ""
+                      },
+                      "castellon": {
+                        "value": "Castellón",
+                        "rel": ""
+                      },
+                      "ceuta": {
+                        "value": "Ceuta",
+                        "rel": ""
+                      },
+                      "ciudad_real": {
+                        "value": "Ciudad Real",
+                        "rel": ""
+                      },
+                      "cordoba": {
+                        "value": "Córdoba",
+                        "rel": ""
+                      },
+                      "cuenca": {
+                        "value": "Cuenca",
+                        "rel": ""
+                      },
+                      "gipuzkoa": {
+                        "value": "Gipuzkoa",
+                        "rel": ""
+                      },
+                      "girona": {
+                        "value": "Girona",
+                        "rel": ""
+                      },
+                      "granada": {
+                        "value": "Granada",
+                        "rel": ""
+                      },
+                      "guadalajara": {
+                        "value": "Guadalajara",
+                        "rel": ""
+                      },
+                      "huelva": {
+                        "value": "Huelva",
+                        "rel": ""
+                      },
+                      "huesca": {
+                        "value": "Huesca",
+                        "rel": ""
+                      },
+                      "illes_balears": {
+                        "value": "Illes Balears",
+                        "rel": ""
+                      },
+                      "jaen": {
+                        "value": "Jaén",
+                        "rel": ""
+                      },
+                      "la_rioja": {
+                        "value": "La Rioja",
+                        "rel": ""
+                      },
+                      "las_palmas": {
+                        "value": "Las Palmas",
+                        "rel": ""
+                      },
+                      "leon": {
+                        "value": "León",
+                        "rel": ""
+                      },
+                      "lleida": {
+                        "value": "Lleida",
+                        "rel": ""
+                      },
+                      "lugo": {
+                        "value": "Lugo",
+                        "rel": ""
+                      },
+                      "madrid": {
+                        "value": "Madrid",
+                        "rel": ""
+                      },
+                      "malaga": {
+                        "value": "Málaga",
+                        "rel": ""
+                      },
+                      "melilla": {
+                        "value": "Melilla",
+                        "rel": ""
+                      },
+                      "murcia": {
+                        "value": "Murcia",
+                        "rel": ""
+                      },
+                      "navarra": {
+                        "value": "Navarra",
+                        "rel": ""
+                      },
+                      "ourense": {
+                        "value": "Ourense",
+                        "rel": ""
+                      },
+                      "palencia": {
+                        "value": "Palencia",
+                        "rel": ""
+                      },
+                      "pontevedra": {
+                        "value": "Pontevedra",
+                        "rel": ""
+                      },
+                      "salamanca": {
+                        "value": "Salamanca",
+                        "rel": ""
+                      },
+                      "s_cruz_tenerife": {
+                        "value": "Santa Cruz de Tenerife",
+                        "rel": ""
+                      },
+                      "segovia": {
+                        "value": "Segovia",
+                        "rel": ""
+                      },
+                      "sevilla": {
+                        "value": "Sevilla",
+                        "rel": ""
+                      },
+                      "soria": {
+                        "value": "Soria",
+                        "rel": ""
+                      },
+                      "tarragona": {
+                        "value": "Tarragona",
+                        "rel": ""
+                      },
+                      "teruel": {
+                        "value": "Teruel",
+                        "rel": ""
+                      },
+                      "toledo": {
+                        "value": "Toledo",
+                        "rel": ""
+                      },
+                      "valencia": {
+                        "value": "Valencia",
+                        "rel": ""
+                      },
+                      "valladolid": {
+                        "value": "Valladolid",
+                        "rel": ""
+                      },
+                      "zamora": {
+                        "value": "Zamora",
+                        "rel": ""
+                      },
+                      "zaragoza": {
+                        "value": "Zaragoza",
+                        "rel": ""
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "agricultura": {
+            "value": "Agricultura y Pesca",
+            "rel": ""
+          },
+          "educacion": {
+            "value": "Alta inspección de educación",
+            "rel": ""
+          },
+          "seguridad": {
+            "value": "Derechos y seguridad ciudadana",
+            "rel": ""
+          },
+          "trabajo": {
+            "value": "Trabajo e inmigración",
+            "rel": ""
+          },
+          "vacunacion": {
+            "value": "Vacunación internacional",
+            "rel": ""
+          }
+        }
+      },
+      "age": {
+        "label": "Administración General del Estado",
+        "options": {
+          "age": {
+            "value": "Oficinas de Información y Atención a la Ciudadanía (incluye registro civil)",
+            "rel": ""
+          }
+        }
+      },
+      "policia": {
+        "label": "Policia",
+        "options": {
+          "policia": {
+            "value": "Policia Nacional",
+            "rel": ""
+          }
+        }
+      },
+      "inss": {
+        "label": "Seguridad Social",
+        "options": {
+          "inss": {
+            "value": "INSS",
+            "rel": ""
+          }
+        }
+      },
+      "haciendas": {
+        "label": "Haciendas",
+        "options": {
+          "hac_est": {
+            "value": "Hacienda Estatal",
+            "rel": ""
+          },
+          "hac_cat": {
+            "value": "Hacienda Catalunya",
+            "rel": ""
+          },
+          "hac_mad": {
+            "value": "Hacienda Comunidad de Madrid",
+            "rel": ""
+          }
+        }
+      },
+      "interior": {
+        "label": "Ministerio del Interior",
+        "options": {
+          "min_int": {
+            "value": "Ministerio del Interior",
+            "rel": ""
+          }
+        }
+      },
+      "ayuntamientos": {
+        "label": "Ayuntamientos",
+        "options": {
+          "ayu_bcn": {
+            "value": "Ayuntamiento de Barcelona",
+            "rel": ""
+          },
+          "ayu_mad": {
+            "value": "Ayuntamiento de Madrid",
+            "rel": ""
+          }
+        }
+      }
+    }
+  }
+}
